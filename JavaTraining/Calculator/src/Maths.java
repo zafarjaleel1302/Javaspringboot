@@ -3,7 +3,10 @@ import java.io.IOException;
 public class Maths{
 	 
 	public void calculation() throws IOException{
-		int operator=Menu.show();
+		int operator;		
+		int c;
+		do {
+		operator=Menu.show();
 		int result;
 		System.out.println("Enter first number");
 		int a=BasicInput.readInteger();
@@ -52,7 +55,9 @@ public class Maths{
 	        System.out.println("Invalid operator!");
 	        break;
 	    }
-		
+		System.out.println("Enter 7 for continue calculation or Enter 9 to stop calculation");
+		c=BasicInput.readInteger();
+		}while(c==7);
 	}
 	
 }
