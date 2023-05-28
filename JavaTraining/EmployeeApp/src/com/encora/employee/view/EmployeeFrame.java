@@ -88,6 +88,7 @@ public class EmployeeFrame extends Frame{
 		locationChoice.add("Banglore");
 		locationChoice.add("Hubali");
 		locationChoice.add("Chennai");
+		locationChoice.add("Mumbai");
 		add(locationChoice);
 		
 		employeeAddressLabel=new Label("Employee Address");
@@ -168,6 +169,7 @@ public class EmployeeFrame extends Frame{
 	public void setEmployeeNameTextField(TextField employeeNameTextField) {
 		this.employeeNameTextField = employeeNameTextField;
 	}
+
 	public TextField getEmployeeSalaryTextField() {
 		return employeeSalaryTextField;
 	}
